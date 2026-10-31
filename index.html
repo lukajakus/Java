@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="description" content="Java Learning Lab — interaktivne lekcije, stvarni Java zadaci, simulatori i JavaDoc na hrvatskom jeziku." />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Java Learning Lab — TVZ OOP učionica</title>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#dashboard" aria-label="Početna Java Learning Lab">
+      <span class="brandmark">J<span>.</span></span><span class="brandtext"><strong>JAVA</strong><small>LEARNING LAB</small></span>
+    </a>
+    <div class="side-status"><span class="live-dot"></span><span>INTERAKTIVNA UČIONICA</span><span class="side-status-tag">v1.0</span></div>
+    <div class="side-label">RADNI PROSTOR</div>
+    <nav id="globalNav" aria-label="Glavna navigacija">
+      <a class="nav-item" href="#dashboard" data-nav="dashboard"><span class="ni">▦</span> Nadzorna ploča</a>
+      <a class="nav-item" href="#lesson" data-nav="lesson"><span class="ni">▤</span> Lekcije <span class="nav-count">32</span></a>
+      <a class="nav-item" href="#playground" data-nav="playground"><span class="ni">⌘</span> Java Playground</a>
+      <a class="nav-item" href="#tasks" data-nav="tasks"><span class="ni">⌁</span> Praktični zadaci <span class="nav-count">39</span></a>
+      <a class="nav-item" href="#quiz" data-nav="quiz"><span class="ni">◈</span> Provjera znanja</a>
+      <a class="nav-item" href="#simulator" data-nav="simulator"><span class="ni">◉</span> Simulator</a>
+      <a class="nav-item" href="#glossary" data-nav="glossary"><span class="ni">≡</span> Rječnik & referenca</a>
+      <a class="nav-item" href="#final" data-nav="final"><span class="ni">◇</span> Završni projekt</a>
+    </nav>
+    <div class="side-label module-label">NASTAVNI MODULI</div>
+    <div id="moduleNav" class="module-nav" aria-label="Moduli"></div>
+    <div class="sidebar-bottom"><div class="sidebar-progress"><div class="small-muted">Tvoj napredak <b id="sidePercent">0%</b></div><div class="progress-track"><div id="sideBar" class="progress-fill"></div></div></div><button class="side-help" data-action="settings">⚙ Postavke i sigurnosna kopija</button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><button class="mobile-menu" id="menuToggle" aria-label="Otvori izbornik">☰</button><div class="crumb" id="breadcrumb">Java Learning Lab / Pregled</div><div class="top-actions"><button id="searchOpen" class="search-trigger" data-action="search"><span>⌕</span> Pretraži gradivo <kbd>Ctrl K</kbd></button><span class="runner-badge" id="runnerBadge"><i class="runner-dot"></i> Java runner: provjera</span><button class="icon-btn" id="themeToggle" data-action="theme" aria-label="Promijeni temu">☾</button></div></header>
+    <main id="app" tabindex="-1"><div class="loading"><div class="spinner"></div> Učitavanje nastave…</div></main>
+    <footer class="footer">Java Learning Lab <span>•</span> Java 21 <span>•</span> Izrađeno prema TVZ nastavnim materijalima i dopunskom gradivu <span>•</span> Edukacijski alat</footer>
+  </div>
+</div>
+<div id="modalRoot"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
